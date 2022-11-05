@@ -37,8 +37,8 @@ exports.addFLight = async (req,res) =>{
             id: uuid(),
             title,
             price,
-            time: new Date().toLocaleTimeString(),
-            date: new Date().toLocaleDateString()
+            time ,
+            date
         }
         Flights.push(flight)
         res.status(201).json({
