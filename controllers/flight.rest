@@ -1,14 +1,30 @@
 @url = "http://localhost:3000/"
 
 GET http://localhost:3000 HTTP/1.1
+###
+GET http://localhost:3000/3c284ddb-49ef-465b-8897-64fc8706f72e HTTP/1.1
 
 ###
 POST http://localhost:3000 HTTP/1.1
 Content-Type: application/json
 
 {
-"title": "flight to Sweden",
+"title": "flight to sweden",
 "time": "1pm",
 "price": 26000,
 "date": "26-06-2022"
 }
+###
+PUT http://localhost:3000/52e58eca-6242-4974-bff5-f086ca5325cb HTTP/1.1
+Content-Type: application/json
+
+{
+"title": "flight to UPPSALA, SWEDEN  UPPSALA",
+"time": "1pm",
+"price": 26000,
+"sell": 26000,
+"date": "26-06-2022"
+}
+
+######
+DELETE http://localhost:3000/6128e2af-30c1-4a07-9853-baae523434bd
